@@ -6,7 +6,7 @@ body {
   background-color: black;
   color: white;
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 17, 255), rgb(0, 173, 253));
+  background-image: linear-gradient(rgb(0, 17, 255), rgb(253, 0, 0));
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
