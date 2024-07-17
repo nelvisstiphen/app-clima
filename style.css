@@ -1,0 +1,47 @@
+h1 {
+  color: rgb(240, 2, 2);
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 183, 255), rgb(4, 0, 255));
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+
+  width: 80%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contenedor div {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+}
+
+.nombre {
+  position: absolute;
+  top: 0;
+  font-size: 42px;
+  color: rgb(1, 255, 65);
+}
+
+.hora {
+  width: 200px;
+}
