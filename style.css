@@ -6,11 +6,12 @@ body {
   background-color: black;
   color: white;
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 17, 255), rgb(253, 0, 0));
+  background-image: linear-gradient(rgb(0, 17, 255), rgb(0, 173, 253));
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .contenedor {
@@ -44,4 +45,38 @@ body {
 
 .hora {
   width: 200px;
+}
+
+/*  APP CLIMA  */
+
+.form-clima {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: aqua;
+  margin-top: 20px;
+  width: auto;
+  height: 150px;
+  padding: 10px 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-lugar {
+  padding: 7px 20px;
+  border-radius: 7px;
+  border: none;
+  color: rgb(1, 255, 65);
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-clima {
+  padding: 7px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  background-color: rgb(1, 255, 65);
 }
