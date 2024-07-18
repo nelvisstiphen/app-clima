@@ -24,9 +24,14 @@ window.addEventListener("load", () => {
 
   btnBuscar.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(inputLugar.value);
     buscadorLugar(inputLugar.value);
   });
+
+  function obtenerHora() {
+    let currentTime = new Date();
+    hora.textContent = currentTime.toLocaleTimeString();
+  }
+  setInterval(obtenerHora, 1000);
 
   function obtenerApi(url) {
     fetch(url)
@@ -77,13 +82,8 @@ window.addEventListener("load", () => {
       .catch((error) => {
         console.log(error);
       });
+    console.log(url);
   }
-
-  function obtenerHora() {
-    let currentTime = new Date();
-    hora.textContent = currentTime.toLocaleTimeString();
-  }
-  setInterval(obtenerHora, 1000);
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((posicion) => {
