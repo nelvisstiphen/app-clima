@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   let lon;
   let lat;
 
@@ -89,28 +89,8 @@ window.addEventListener("load", () => {
     navigator.geolocation.getCurrentPosition((posicion) => {
       lon = posicion.coords.longitude;
       lat = posicion.coords.latitude;
-
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&units=metric&appid=7c58caf463b7870b62b39a4878a040d2`;
-
       obtenerApi(url);
     });
   }
 });
-
-/* 
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    datos(data);
-    console.log(data);
-  })
-  .catch((error) => console.log(error));
-
-function datos(data) {
-  data.forEach((usuario) => {
-    const li = document.createElement("li");
-    li.textContent = usuario.name;
-    lista.append(li);
-  }); 
-}
- */
