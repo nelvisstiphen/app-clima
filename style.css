@@ -6,7 +6,7 @@ body {
   background-color: black;
   color: white;
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 17, 255), rgb(0, 173, 253));
+  background-image: linear-gradient(rgb(0, 17, 255), #01adff);
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ body {
   position: absolute;
   top: 0;
   font-size: 42px;
-  color: rgb(1, 255, 65);
+  color: #01ff41;
 }
 
 .hora {
